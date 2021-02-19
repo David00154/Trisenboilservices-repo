@@ -2,12 +2,12 @@
     "version": 2,
     "builds": [
         {
-            "src": "__sapper__/build/index.js", "use": "@vercel/node"
+            "src": "src/_server.js", "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)", "dest": "__sapper__/build/index.js"
+            "src": "/(.*)", "dest": "src/_server.js"
         }
     ]
 }
