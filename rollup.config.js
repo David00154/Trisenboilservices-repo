@@ -1,5 +1,6 @@
 import path from 'path';
 import resolve from '@rollup/plugin-node-resolve';
+import alias from '@rollup/plugin-alias';
 import replace from '@rollup/plugin-replace';
 import commonjs from '@rollup/plugin-commonjs';
 import url from '@rollup/plugin-url';
@@ -10,6 +11,11 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+
+const resolvePath = (pathToResolve) => {
+	return path.resolve(process.cwd() + '/src' + pathToResolve)
+}
+
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -26,6 +32,11 @@ export default {
 		input: config.client.input().replace(/\.js$/, '.ts'),
 		output: config.client.output(),
 		plugins: [
+			alias({
+				entries: [
+					{ find: '@components', replacement: resolvePath('/components') },
+				]
+			}),
 			replace({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
@@ -78,6 +89,11 @@ export default {
 		input: { server: config.server.input().server.replace(/\.js$/, ".ts") },
 		output: config.server.output(),
 		plugins: [
+			alias({
+				entries: [
+					{ find: '@components', replacement: resolvePath('/components') },
+				]
+			}),
 			replace({
 				'process.browser': false,
 				'process.env.NODE_ENV': JSON.stringify(mode)
