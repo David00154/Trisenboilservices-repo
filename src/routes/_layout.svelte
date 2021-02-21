@@ -8,5 +8,6 @@
 <Nav {segment}/>
 
 <main>
+	<i class="material-icons text-3xl bg-purple">settings_accessibility</i>
 	<slot></slot>
 </main>
