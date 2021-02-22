@@ -10,7 +10,6 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
 
 *,
 *::before,
@@ -57,7 +56,6 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 
 body {
   font-family:
-    Cabin,
 		system-ui,
 		-apple-system, /* Firefox supports this but not yet `system-ui` */
 		'Segoe UI',

@@ -92,6 +92,7 @@ export default {
 			alias({
 				entries: [
 					{ find: '@components', replacement: resolvePath('/components') },
+					{ find: '@routes', replacement: resolvePath('/routes') }
 				]
 			}),
 			replace({
