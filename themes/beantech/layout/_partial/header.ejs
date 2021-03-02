@@ -2,6 +2,7 @@
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
+        opacity: 8;
         <% if (is_home()) { %>
             background-image: url('<%= config.root + config["header-img"] %>') 
             /*config*/
@@ -42,7 +43,7 @@
                     </div>
                 <% } else { %>
                     <div class="site-heading">
-                        <h2><%= page.title || page.subTitle %></h2>
+                        <h1><%= page._title %></h1>
                         <!--<hr class="small">-->
                         <span class="subheading"><%= page.subTitle || "" %></span>
                     </div>

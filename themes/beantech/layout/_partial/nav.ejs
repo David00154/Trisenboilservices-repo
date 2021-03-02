@@ -1,3 +1,21 @@
+<style>
+    .logo {
+        display: flex;
+        height: 74.5px;
+        width: 74.5px;
+        float: left;
+        padding: 15px 15px;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    .brand {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-shrink: 1;
+    }
+</style>
+
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -9,7 +27,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<%= config.root %>"><%= config.title %></a>
+            <div class="brand">
+                <img class="logo" src="/images/img1.jpg" alt="">
+                <a class="navbar-brand" href="<%= config.root %>">
+                    <%= config.title %>
+                </a>
+            </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
