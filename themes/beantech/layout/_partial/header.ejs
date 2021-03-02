@@ -9,7 +9,7 @@
             background-image: url('<%= page["header-img"] %>')
             /*post*/
         <%} else {%>
-            background-image: url('<%= config.root + page["header-img"] %>')
+            background-image: url('<%= page["header-img"] %>')
             /*page*/
         <%} %>
     }
@@ -42,7 +42,7 @@
                     </div>
                 <% } else { %>
                     <div class="site-heading">
-                        <h1><%= page.title || page.subTitle %></h1>
+                        <h2><%= page.title || page.subTitle %></h2>
                         <!--<hr class="small">-->
                         <span class="subheading"><%= page.subTitle || "" %></span>
                     </div>
@@ -54,3 +54,9 @@
         </div>
     </div>
 </header>
+
+<style>
+    .site-heading h2 {
+        font-size: 8rem;
+    }
+</style>
