@@ -5,7 +5,7 @@
 <%- partial('_partial/head') %>
 
 <!-- hack iOS CSS :active style -->
-<body ontouchstart="">
+<body ontouchstart="" style="width: 100vw; padding-right: 0; margin-right: 0; box-sizing: border-box; overflow: inherit;">
 	<%- partial('_partial/header',{cache: true}) %>
 	
     <%- partial('_partial/nav',{cache: true}) %>
