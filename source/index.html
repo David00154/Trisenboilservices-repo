@@ -2,9 +2,12 @@
 _title: TRISENB OIL SERVICES NIG. LTD
 headTag: Home
 description:
-header-img: /images/img2.jpg
+header-img: /images/img3.jpg
 ---
-    <section class="_container">
+    <section class="_container" 
+    data-aos="fade-right" 
+    data-aos-delay="70"
+    data-aos-duration="1000">
         <h2 class="heading">
             TRISENB OIL SERVICES NIG. LTD is an indigenous company carrying out calibration activity.
         </h2>
@@ -17,7 +20,11 @@ header-img: /images/img2.jpg
         </p>
     </section>
     
-    <section class="grid _container grid-row" style="gap: 2rem; text-align: center;">
+    <section 
+    data-aos="fade-left" 
+    data-aos-delay="75" 
+    data-aos-duration="1008"
+    class="grid _container grid-row" style="gap: 2rem; text-align: left;">
             <div class="grid-row sm-all-screen-default">
                 <h3 class="row-heading">TECHNIQUE.</h3>
                 <p>
@@ -30,33 +37,51 @@ header-img: /images/img2.jpg
                    <span>-</span> Suitable for calibration/integrity test pressure and temperature.
                    <br>
                    <span>-</span> Test pressure rating verified.
-                   <!-- <br>
+                   <br>
                    <span>2</span> Assembly verification.
                    <br>
-                   <span>-</span> Connections verified during assembly (proper rating and marching).
-                   <br>
-                   <span>-</span> Connection fittings secured to structure assembly and tightened. -->
-
+                   <span>-</span> Connections verified during ...
                 </p>
     
                 <a style="font-weight: 500; color: white; text-decoration: none;" href="" class="more-link">More >></a>
             </div>
             <div class="grid-row sm-all-screen-default">
                 <h3 class="row-heading">OCCUPATIONAL HEALTH POLICY.</h3>
+                <p>
+                    It is our policy to help Trisenb employees to care for their own health. As regards occupational health, the policy promotes a workplace that protect the health of Trisenb employees and the surrounding community. The policy emphasizes ...
+                </p>
                 <a style="font-weight: 500; color: white; text-decoration: none;" href="" class="more-link">More >></a>
             </div>
             <div class="grid-row sm-all-screen-default">
                 <h3 class="row-heading">VESSEL INTERNAL INSPECTION.</h3>
+                <p class="heading-child">
+                    <span>These includes:</span>
+                    <br>
+                    Pressure vessel internal components inspection of baffle, weir and vane distributors
+                    Detection of crack on plates and weld joints.
+                    Daniel orifice meter maintenance.
+                    Replacement of ancillary equipment
+                    Scrubber instrument air distribution system ...
+
+                </p>
                 <a style="font-weight: 500; color: white; text-decoration: none;" href="" class="more-link">More >></a>
             </div>
             <div class="grid-row sm-all-screen-default">
                 <h3 class="row-heading">COMPANY AT A GLANCE.</h3>
+                <p>
+                    Trisenb Oil Services is a progressive company and promoted by a group of qualified Engineers and Technicians having rich experience of over 17 years in calibration, testing and Mechanical Engineering services. 
+
+                    Trisenb Oil Services has more than 10 clients in Nigeria. The company ...
+                    </p>
                 <a style="font-weight: 500; color: white; text-decoration: none;" href="" class="more-link">More >></a>
             </div>
     </section>
             
     
-    <section class="_container">
+    <section class="_container" 
+    data-aos="fade-right" 
+    data-aos-delay="80"
+    data-aos-duration="1015">
         <h2 class="heading">
             Quality HSE Plan
         </h2>
@@ -74,7 +99,8 @@ header-img: /images/img2.jpg
             </p>
     </section>
     
-    <section class="_container">
+    <section class="_container"
+    data-aos="fade-left" >
         <h2 class="heading">
             Scope Of Work
         </h2>
@@ -99,7 +125,7 @@ header-img: /images/img2.jpg
             <a style="font-weight: 500; color: white; text-decoration: none;" href="" class="more-link">More >></a>
     </section>
 
-    <section>
+    <section data-aos="fade-left" >
             <div class="_container">
                 <h2 class="heading">
                     Our Partners
@@ -109,7 +135,7 @@ header-img: /images/img2.jpg
                     We work closely with our partners to deliver excellence on any project we undertake
                 </p>
             </div>
-            <div class="our-partners" style="width: 100vw;">
+            <div class="our-partners">
                 <img src="/images/img1.jpg">
                 <img src="/images/img2.jpg">
                 <img src="/images/img3.jpg">
@@ -120,7 +146,7 @@ header-img: /images/img2.jpg
             </div>
     </section>
 
-    <section>
+    <section data-aos="fade-right" >
         <div class="achievement-block">
             <div class="achievement-block-child" style="background: #316df0d8;">
                 <h3>Spanning Over</h3>
@@ -146,15 +172,20 @@ header-img: /images/img2.jpg
     </section>
 
 <style>
-    .achievement-block {
-        color: white;
-        margin-top: 0px;
-        display: block;
+    .heading-child {
+        align-items: left;
+        word-wrap: break-word;
     }
-    .achievement-block div {
-        width: 100%;
-        height: 189px;
+    .achievement-block {
+        /* color: white; */
+        /* margin-top: 0px; */
+        display: none;
+    }
+    .achievement-block-child {
+        width: 100vw;
+        /* height: 189px; */
         text-align: center;
+        margin: 0px 0px 0px 0px;
         padding: 1rem, 1rem, 1rem, 1rem;
     }
     .achievement-block h3 {
@@ -169,17 +200,21 @@ header-img: /images/img2.jpg
         display: flex;
         flex-direction: row;
         overflow-x: auto;
+        width: 100vw;
     }
     .our-partners img {
         height: 170px;
         width: 170px;
         margin-right: .8rem;
     }
+    /* .row-heading {
+        text-align: left;
+    } */
     .row-heading p {
         overflow: hidden;
         text-overflow: clip;
         white-space: nowrap;
-        text-align: left;
+        text-align: center;
     }
     .more-link {
         border-radius: 5%;
@@ -212,11 +247,14 @@ header-img: /images/img2.jpg
             margin-top: 2rem;
             display: flex;
             flex-direction: row;
+            /* display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr)); */
         }
-        .achievement-block div {
+        .achievement-block-child {
             width: 344px;
-            height: 215.66px;
+            /* height: 215.66px; */
             text-align: center;
+            margin: 0px 0px 0px 0px;
         }
         .achievement-block h3 {
             font-size: 18px;
@@ -242,7 +280,7 @@ header-img: /images/img2.jpg
             width: 258px;
             margin-right: .8rem;
         }
-        /* .grid-row {
+        .grid-row {
             grid-template-columns: 1fr 1fr 1fr;
             gap: 4rem;
         }
@@ -250,7 +288,7 @@ header-img: /images/img2.jpg
             overflow-x: auto;
             grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: 4rem;
-        } */
+        }
     }
     .heading {
         text-align: center;
@@ -273,7 +311,7 @@ header-img: /images/img2.jpg
     }
 
     .row-heading {
-        text-align: center;
+        text-align: left;
         color: rgb(29, 28, 28);;
         line-height: 1;
         letter-spacing: 0.04em;

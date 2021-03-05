@@ -5,7 +5,7 @@
 <%- partial('_partial/head') %>
 
 <!-- hack iOS CSS :active style -->
-<body ontouchstart="" style="width: 100vw; padding-right: 0; margin-right: 0; box-sizing: border-box; overflow: inherit;">
+<body ontouchstart="" style="width: 100vw; padding: 0; margin-: 0; box-sizing: border-box; overflow-x: hidden;">
 	<%- partial('_partial/header',{cache: true}) %>
 	
     <%- partial('_partial/nav',{cache: true}) %>
@@ -23,7 +23,12 @@
 <!-- Image to hack wechat -->
 <img src="<%= config['url'] %><%= config['root'] %>img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
-
+<%- js('js/aos.js') %>
+    <script>
+      AOS.init({
+          once: false
+      })
+  </script>
 </body>
 
 </html>
